@@ -1,13 +1,13 @@
 import static org.junit.jupiter.api.Assertions.*;
 
-class  MainTest {
+class MainTest {
 
     @org.junit.jupiter.api.Test
     void parenthesesCheck() {
-        assertEquals(true, Main.parenthesesCheck("()"));
-        assertEquals(false, Main.parenthesesCheck(")(()))"));
-        assertEquals(false, Main.parenthesesCheck("("));
-        assertEquals(true, Main.parenthesesCheck("(())((()())())"));
+        assertTrue(Main.parenthesesCheck("()"));
+        assertFalse(Main.parenthesesCheck(")(()))"));
+        assertFalse(Main.parenthesesCheck("("));
+        assertTrue(Main.parenthesesCheck("(())((()())())"));
     }
 
     @org.junit.jupiter.api.Test
